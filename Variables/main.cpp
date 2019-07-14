@@ -1,4 +1,5 @@
 #include <iostream>
+#include <limits> // Allows us to see max size of variables
 
 using namespace std;
 
@@ -16,6 +17,25 @@ int main() {
 	cout << "New dog acquired!" << endl;
 	numDogs = numDogs + 1;
 	cout << "New number of dogs: " << numDogs << endl;
+
+	cout << "Max int value: " << INT_MAX << endl;
+	cout << "Min int value: " << INT_MIN << endl;
+
+	long int lValue = 23456465;
+	cout << lValue << endl;
+
+	short int sValue = 23434;
+	cout << sValue << endl;
+
+	unsigned int uValue = 32345;
+	cout << uValue << endl;
+
+	cout << "Size of int: " << sizeof(int) << endl;
+	cout << "Size of long int: " << sizeof(long int) << endl;
+	cout << "Size of short int: " << sizeof(short int) << endl;
+	cout << "Size of unsigned int: " << sizeof(unsigned int) << endl;
+
+
 
 	// Strings
 	string text1 = "Hello ";

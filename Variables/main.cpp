@@ -25,7 +25,20 @@ int main() {
 
 	// User Input
 	string text4 = "Hello";
+	string input;
 	cout << text4 << endl;
+
+	cout << "Enter your name: " << flush;
+	cin >> input;
+	cout << "String you entered: " << input << endl;
+
+	cout << "Enter your age: ";
+	int value;
+	cin >> value;
+	cout << "You entered: " << value << endl;
+
+
+
 
 
 	return 0;

@@ -1,5 +1,6 @@
 #include <iostream>
 #include <limits> // Allows us to see max size of variables
+#include <iomanip> // Allows us to control cout with numbers, either in normal or scientific
 
 using namespace std;
 
@@ -35,6 +36,18 @@ int main() {
 	cout << "Size of short int: " << sizeof(short int) << endl;
 	cout << "Size of unsigned int: " << sizeof(unsigned int) << endl;
 
+	// Floating Point Types
+	float fValue = 123.456789;
+	cout << setprecision(20) << fixed << fValue << endl; // fixed/scientific are interchangable -- setprecicision determines how many digits to display
+	cout << "Size of float: " << sizeof(float) << endl;
+
+	double dValue = 123.456789;
+	cout << setprecision(20) << fixed << dValue << endl; // fixed/scientific are interchangable -- setprecicision determines how many digits to display
+	cout << "Size of double: " << sizeof(double) << endl;
+
+	long double ldValue = 123.456789876543210;
+	cout << setprecision(20) << fixed << ldValue << endl; // fixed/scientific are interchangable -- setprecicision determines how many digits to display
+	cout << "Size of long double: " << sizeof(long double) << endl;
 
 
 	// Strings

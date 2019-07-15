@@ -49,7 +49,6 @@ int main() {
 	cout << setprecision(20) << fixed << ldValue << endl; // fixed/scientific are interchangable -- setprecicision determines how many digits to display
 	cout << "Size of long double: " << sizeof(long double) << endl;
 
-
 	// Strings
 	string text1 = "Hello ";
 	string text2 = "Fred";
@@ -70,8 +69,19 @@ int main() {
 	cin >> value;
 	cout << "You entered: " << value << endl;
 
+	// Booleans
+	bool bValue = true; // false == 0, true == 1
+	cout << bValue << endl;
 
+	// Characters
+	char cValue = 55; // Puting int value into a char type outputs its equivelant ASCII value - in this case '7'
+	cout << cValue << endl;
+	cout << "Size of char: " << sizeof(char) << endl;
 
+	wchar_t wValue = 'i';
+	cout << wValue << endl;
+	cout << "Size of wchar_t: " << sizeof(wchar_t) << endl;
+	
 
 
 	return 0;
